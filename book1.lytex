@@ -9,6 +9,15 @@
 
 \begin{document}
 
+\pagestyle{empty}
+\begin{center}
+\textsc{\LARGE Learning to Play Music}\\
+\large Through Hymns
+\null\vfill
+\textsc{Whinery Press}
+\end{center}
+\break
+
 \section{Learning to read sheet music}
 
 So in music we use a music staff which is the 5 lines you see below.
