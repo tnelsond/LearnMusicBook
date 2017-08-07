@@ -171,4 +171,52 @@ There are 4 quarter notes for every bar (or measure), so we can count them out l
 
 See how there's a swoopy line connecting the \emph{a} to the \emph{c} on snow? That's a slide. You play one note on a syllable and smoothly follow it up with a different note on the same syllable. If you see a note that with one of those curves connecting two notes that are the same pitch that is called a tie.
 
+\subsection{Let All Mortal Flesh Keep Silence}
+
+The following piece has a \emph{flat mark} (looks like a b) on the \emph{b line}, that means that all of the \emph{b}s are \emph{b flats} and will be played using the first fret on the \emph{a string} rather than the second.
+
+\begin{lilypond}
+    \relative c' {
+		\key f \major
+		d4 e f g a2 a4 (g) a2 a a4 a bes c bes2 a4(g) a2
+		d,4 e f g a2 a4 (g) a2 a a4 a bes c bes2 a4(g) a2
+		a4 a d a g2. f4 d4(f a f) e2 a4 a d a g2 e4(f) d2	
+		}
+		\addlyrics{Let all mor -- tal flesh keep si -- lence And with fear and trem -- bling stand;
+		Pon -- der noth -- ing earth -- ly mind -- ed, For with bless -- ing in His hand
+		Christ our God to earth de -- scend -- eth Our full hom -- age to de -- mand.}
+\end{lilypond}
+
+
+
+\section{The Recorder}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[height=9.5in]{recorderchart.png}
+\end{figure}
+
+\subsection{Breath Control}
+
+Take your left hand and place it on the top holes of the recorder. Your left thumb will cover the hole on the back of the recorder; and your index, middle and ring finger will cover the top 3 holes on the front. With your right hand cover the remaining holes.
+
+Blow very softly and gradually blow harder until you get a good sound. If the sound turns sour you've gone too far. Keep practicing getting this good sound with all the holes covered.
+
+This is a low \emph{c note}.
+
+\begin{lilypond}
+    \relative c' {
+			c4
+		}
+\end{lilypond}
+
+Start each note by saying ``too.'' This is called tonguing and will make your notes start sharper.
+Now try a low \emph{d note}. Look on the chart.
+
+\begin{lilypond}
+    \relative c' {
+			d4 d c d c c d c
+		}
+\end{lilypond}
+
 \end{document}
