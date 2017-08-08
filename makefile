@@ -1,5 +1,16 @@
-book.pdf : book1.tex
-	pdflatex book1.tex book.pdf
+all : ukulele.pdf recorder.pdf
 
-book1.tex : book1.lytex
-	lilypond-book --latex-program=pdflatex book1.lytex
+ukulele.pdf : ukulele.tex intro.tex
+	pdflatex ukulele.tex ukulele.pdf
+
+ukulele.tex : ukulele.lytex
+	lilypond-book --latex-program=pdflatex ukulele.lytex
+
+recorder.pdf : recorder.tex intro.tex
+	pdflatex recorder.tex recorder.pdf
+
+recorder.tex : recorder.lytex intro.lytex
+	lilypond-book --latex-program=pdflatex recorder.lytex
+
+intro.tex : intro.lytex
+	lilypond-book --latex-program=pdflatex intro.lytex

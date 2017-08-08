@@ -18,39 +18,7 @@
 \end{center}
 \break
 
-\section{Learning to read sheet music}
-
-So in music we use a music staff which is the 5 lines you see below.
-
-\begin{lilypond}
-    \relative c' {
-			e4 f g a b c d e f
-		}
-		\addlyrics{e f g a b c d e f}
-\end{lilypond}
-
-As you can see, for every increment higher on the staff the note name becomes the next letter. So if you start at \emph{e}, the space above it will be \emph{f}, the line above that will be \emph{g}.
-And then once you reach the letter \emph{g} there are no note names after that so we wrap around to \emph{a} again.
-
-
-\begin{lilypond}
-    \relative c' {
-			e4 g b d f
-		}
-		\addlyrics{Every Good Boy Does Fine.}
-\end{lilypond}
-
-The above is our mnemonic for remembering the values of the notes of each line. A note on the bottom line will be \emph{e}, the next will be \emph{g}, then \emph{b}, then \emph{d}, and finally the top line is \emph{f}. As the notes go up on the staff they get higher in pitch, and the lower you go the lower the pitch.
-
-
-\begin{lilypond}
-    \relative c' {
-			f4 a c e 
-		}
-		\addlyrics{f a c e}
-\end{lilypond}
-
-We can remember this by saying, ``faces go in spaces.''
+\include{intro}
 
 \section{Playing the Ukulele}
 \subsection{The B-I-B-L-E}
@@ -185,38 +153,6 @@ The following piece has a \emph{flat mark} (looks like a b) on the \emph{b line}
 		\addlyrics{Let all mor -- tal flesh keep si -- lence And with fear and trem -- bling stand;
 		Pon -- der noth -- ing earth -- ly mind -- ed, For with bless -- ing in His hand
 		Christ our God to earth de -- scend -- eth Our full hom -- age to de -- mand.}
-\end{lilypond}
-
-
-
-\section{The Recorder}
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[height=9.5in]{recorderchart.png}
-\end{figure}
-
-\subsection{Breath Control}
-
-Take your left hand and place it on the top holes of the recorder. Your left thumb will cover the hole on the back of the recorder; and your index, middle and ring finger will cover the top 3 holes on the front. With your right hand cover the remaining holes.
-
-Blow very softly and gradually blow harder until you get a good sound. If the sound turns sour you've gone too far. Keep practicing getting this good sound with all the holes covered.
-
-This is a low \emph{c note}.
-
-\begin{lilypond}
-    \relative c' {
-			c4
-		}
-\end{lilypond}
-
-Start each note by saying ``too.'' This is called tonguing and will make your notes start sharper.
-Now try a low \emph{d note}. Look on the chart.
-
-\begin{lilypond}
-    \relative c' {
-			d4 d c d c c d c
-		}
 \end{lilypond}
 
 \end{document}

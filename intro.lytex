@@ -1,0 +1,33 @@
+\section{Learning to read sheet music}
+
+So in music we use a music staff which is the 5 lines you see below.
+
+\begin{lilypond}
+    \relative c' {
+			e4 f g a b c d e f
+		}
+		\addlyrics{e f g a b c d e f}
+\end{lilypond}
+
+As you can see, for every increment higher on the staff the note name becomes the next letter. So if you start at \emph{e}, the space above it will be \emph{f}, the line above that will be \emph{g}.
+And then once you reach the letter \emph{g} there are no note names after that so we wrap around to \emph{a} again.
+
+
+\begin{lilypond}
+    \relative c' {
+			e4 g b d f
+		}
+		\addlyrics{Every Good Boy Does Fine.}
+\end{lilypond}
+
+The above is our mnemonic for remembering the values of the notes of each line. A note on the bottom line will be \emph{e}, the next will be \emph{g}, then \emph{b}, then \emph{d}, and finally the top line is \emph{f}. As the notes go up on the staff they get higher in pitch, and the lower you go the lower the pitch.
+
+
+\begin{lilypond}
+    \relative c' {
+			f4 a c e 
+		}
+		\addlyrics{f a c e}
+\end{lilypond}
+
+We can remember this by saying, ``faces go in spaces.''

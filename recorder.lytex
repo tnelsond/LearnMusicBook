@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[letterpaper, margin=0.5in]{geometry}
+\usepackage{newcent}
+
+\usepackage{import}
+\usepackage{graphics}
+\usepackage{graphicx}
+
+
+\begin{document}
+
+\pagestyle{empty}
+\begin{center}
+\textsc{\LARGE Learning to Play the Recorder}\\
+\large Through Hymns
+\null\vfill
+\textsc{Whinery Press}
+\end{center}
+\break
+
+\include{intro}
+
+\section{The Recorder}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[height=9.5in]{recorderchart.png}
+\end{figure}
+
+\subsection{Breath Control}
+
+Take your left hand and place it on the top holes of the recorder. Your left thumb will cover the hole on the back of the recorder; and your index, middle and ring finger will cover the top 3 holes on the front. With your right hand cover the remaining holes.
+
+Blow very softly and gradually blow harder until you get a good sound. If the sound turns sour you've gone too far. Keep practicing getting this good sound with all the holes covered.
+
+This is a low \emph{c note}.
+
+\begin{lilypond}
+    \relative c' {
+			c4
+		}
+\end{lilypond}
+
+Start each note by saying ``too.'' This is called tonguing and will make your notes start sharper.
+Now try a low \emph{d note}. Look on the chart.
+
+\begin{lilypond}
+    \relative c' {
+			d4 d c d c c d c
+		}
+\end{lilypond}
+
+\end{document}
