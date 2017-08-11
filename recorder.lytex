@@ -50,4 +50,50 @@ Now try a low \emph{d note}. Look on the chart.
 		}
 \end{lilypond}
 
+\subsection{Nothing But The Blood}
+
+Use your fingering chart to play this.
+Pay attention to whether the note is a high one or a low one, you can't play your low \emph{d} for the \emph{d} in this song.
+
+\begin{lilypond}
+		\transpose f g{
+    \relative c' {
+			f4 f f g | a c a2
+		}}
+		\addlyrics{What can wash a -- way my sin?}
+\end{lilypond}
+
+Now let's learn some timing.
+
+\begin{lilypond}
+    \relative c'' {
+			b1 b2 b4 b8 b8 | b8 b4. b2.
+		}
+		\addlyrics{full, half, quarter, eighth, eighth eighth, dotted-quarter, dotted-half, full}
+\end{lilypond}
+
+For the most part we have been playing quarter notes,
+but the notes that have holes in them are half notes and they are twice as long as a quarter note. But a dot next to a note makes it a half of its value longer, so a dotted quarter note would be a quarter note and an eighth note, and a dotted half note would be a half note and a quarter note (or 3 quarter notes). A note with a flag on it (or a bar if it's connected to another note) is an eighth note.
+
+\begin{lilypond}
+		\transpose f g{
+    \relative c' {
+			f4 f f g | a c a2 | f8 f f g a4 a g2 f
+		}}
+		\addlyrics{What can wash a -- way my sin? Noth -- ing but the blood of Je -- sus;}
+\end{lilypond}
+
+Tap your foot at a steady rate to this song as you play. Hold each quarter note from when your foot hits the ground to when it hits the ground again. Hold a half note for 2 toe taps. For eighth notes do 2 of them in 1 tap.
+
+\begin{lilypond}
+		\transpose f g{
+    \relative c' {
+			f4 f f g | a c a2 | f8 f f g a4 a g2 f |
+			f4 f f g | a c a2 | f8 f f g a4 a g2 f |
+			c'2 a4 g a c a2 g g4 f g g a( c) c2 a4 g a c a2
+			f8 f f g a4 a g2 f |
+		}}
+		\addlyrics{What can wash a -- way my sin? Noth -- ing but the blood of Je -- sus; what can make me whole a -- gain? Noth -- ing but the blood of Je -- sus. O pre -- cious is the flow that makes me white as snow; no oth -- er fount I know, noth -- ing but the blood of Je -- sus.}
+\end{lilypond}
+
 \end{document}
