@@ -96,4 +96,35 @@ Tap your foot at a steady rate to this song as you play. Hold each quarter note 
 		\addlyrics{What can wash a -- way my sin? Noth -- ing but the blood of Je -- sus; what can make me whole a -- gain? Noth -- ing but the blood of Je -- sus. O pre -- cious is the flow that makes me white as snow; no oth -- er fount I know, noth -- ing but the blood of Je -- sus.}
 \end{lilypond}
 
+\subsection{Ornaments (Embellishments)}
+The funnest part of playing the recorder is having fun with it, on easy songs you can't just play the song as written (that's boring). So let's go through some new techniques:
+
+A cut is when you interrupt playing a note to very quickly play one above it. For example, in ``Nothing But the Blood'' which looks like this: 
+
+\begin{lilypond}
+    \relative c' {
+			f4 f f g | a c a2
+		}
+		\addlyrics{What can wash a -- way my sin?}
+\end{lilypond}
+
+I would play like this (just lift your right index finger slightly at the beginning of every \emph{f note}):
+\begin{lilypond}
+    \relative c' {
+			f4 \grace g16 f4 \grace g16 f4 \grace g16 g4 | a8~ \grace b16 a8 c4 a2
+		}
+		\addlyrics{What can wash a -- way my sin?}
+\end{lilypond}
+
+Not enough fun yet? We can add taps too. A tap is where you play a note below the current one very quickly. So, here's some taps:
+
+\begin{lilypond}
+    \relative c' {
+			f4 f4 f4 g4 | a c a4~ \grace g16 a4 | f8 f f g a4 a g4~ \grace f16 g4 f2 |
+
+		}
+		\addlyrics{What can wash a -- way my sin?}
+\end{lilypond}
+
+
 \end{document}
