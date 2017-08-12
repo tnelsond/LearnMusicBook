@@ -111,7 +111,7 @@ A cut is when you interrupt playing a note to very quickly play one above it. Fo
 I would play like this (just lift your right index finger slightly at the beginning of every \emph{f note}):
 \begin{lilypond}
     \relative c' {
-			f4 \grace g16 f4 \grace g16 f4 \grace g16 g4 | a8~ \grace b16 a8 c4 a2
+			f4 \grace g16 f4 \grace g16 f4 \grace g16 g8~ \grace a16 g8 | a4 c4 a2
 		}
 		\addlyrics{What can wash a -- way my sin?}
 \end{lilypond}
@@ -121,10 +121,16 @@ Not enough fun yet? We can add taps too. A tap is where you play a note below th
 \begin{lilypond}
     \relative c' {
 			f4 f4 f4 g4 | a c a4~ \grace g16 a4 | f8 f f g a4 a g4~ \grace f16 g4 f2 |
-
 		}
 		\addlyrics{What can wash a -- way my sin?}
 \end{lilypond}
 
+You can also do a cut followed by a tap; this is called a roll.
 
+\begin{lilypond}
+    \relative c' {
+			f8 f f g a4 a g4 f8~ \grace b16 f8~ \grace d16 f4|
+		}
+		\addlyrics{Noth -- ing but the blood of Je -- sus.}
+\end{lilypond}
 \end{document}
