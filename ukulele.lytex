@@ -206,5 +206,52 @@ Next you'll notice that there is a little \emph{3/4} right after the sharps and 
 		Teach me some mel -- o -- dious sonn -- net sung by flam -- ing tongues a -- bove. Praise the mount I'm fixed up -- on it, mount of Thy re -- deem -- ing love.}
 \end{lilypond}
 
+\section{Playing Chords}
+So far you have been playing notes, and they're fun, but you can play more than one note at a time. Multiple notes being played at the same time is called a chord. The most basic chord is a major triad.
+
+\begin{lilypond}
+	<<
+	\chords{
+		c4
+	}
+	\relative c'{
+		<c e g>
+	}
+	>>
+\end{lilypond}
+
+That was a \emph{C major triad}, but we can just call it a \emph{C chord}. It has the notes \emph{c, e}, and \emph{g}. Here's how you play it on the ukulele:
+
+
+\begin{lilypond}
+	<<
+	\chords{
+		c4
+	}
+	\relative c'{
+    <c e g c>1
+		^\markup{\fret-diagram #"w:4;4-o;3-o;2-o;1-3;"}
+	}
+	>>
+\end{lilypond}
+
+Note that we're playing two \emph{c notes}, but we have 4 strings so we have to double up on one of the notes (or mute or not hit one of the strings. But when you have only 4 strings you best be playing them all).
+
+The left of the fretboard diagram is the \emph{g} string, and the far right is the \emph{a} string.
+
+\begin{lilypond}
+	<<
+	\chords{
+		\set chordChanges = ##t
+		c4~ c1~ c1 f
+	}
+	\relative c' {
+	\partial 4
+		e4 g g g e g2. g4 a a a f a2. a4 b b b a8 g b4 b b a g g a b c2. r4
+	}
+	\addlyrics{The B -- I -- B -- L -- E, Yes that's the book for me. I stand a -- lone on the Word of God, The B -- I -- B -- L -- E}
+	>>
+\end{lilypond}
+
 
 \end{document}
