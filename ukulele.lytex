@@ -155,4 +155,56 @@ The following piece has a \emph{flat mark} (looks like a b) on the \emph{b line}
 		Christ our God to earth de -- scend -- eth Our full hom -- age to de -- mand.}
 \end{lilypond}
 
+\subsection{Come Thou Fount}
+
+The first thing you'll notice is that this song has sharps instead of flats. Songs either have sharps or flats in the key signature but not both.
+
+\begin{lilypond}
+    \relative c' {
+		\partial 4
+		\time 3/4
+		\key d \major
+			fis8 e d4 d fis8 a e4 e4 fis8 a b4 a fis8 e d2 
+		}
+		\addlyrics{Come Thou fount of ev' -- ry bless -- ing, Tune my heart to sing Thy grace.}
+\end{lilypond}
+
+Next you'll notice that there is a little \emph{3/4} right after the sharps and the flats; this is the time signature. Normally a song is in \emph{4/4}. What that means is that there will be 4 quarter notes for every bar of music. The bar is the notes between two vertical lines of music.
+
+
+\begin{lilypond}
+		\header{piece = "A bar of 3/4 music"}
+    \relative c' {
+		\time 3/4
+		\key d \major
+			d4 d4 d4
+		}
+\end{lilypond}
+
+\begin{lilypond}
+		\header{piece = "A bar of 4/4 music"}
+    \relative c' {
+		\time 4/4
+		\key d \major
+			d4 d4 d4 d4 
+		}
+\end{lilypond}
+
+	
+\begin{lilypond}
+    \relative c' {
+		\partial 4
+		\time 3/4
+		\key d \major
+			fis8 e d4 d fis8 a e4 e4 fis8 a b4 a fis8 e d2 
+			fis8 e d4 d fis8 a e4 e4 fis8 a b4 a fis8 e d2 
+			a'8 b16 (cis) d4 cis b8 a b( a) fis4
+			a8 b16 (cis) d4 cis b8 a d2
+			fis,8 e d4 d fis8 a e4 e4 fis8 a b4 a fis8 e d2 
+		}
+		\addlyrics{Come Thou fount of ev' -- ry bless -- ing, Tune my heart to sing Thy grace. Streams of mer -- cy ne -- ver ceas -- ing call for songs of loud -- est praise.
+		Teach me some mel -- o -- dious sonn -- net sung by flam -- ing tongues a -- bove. Praise the mount I'm fixed up -- on it, mount of Thy re -- deem -- ing love.}
+\end{lilypond}
+
+
 \end{document}
