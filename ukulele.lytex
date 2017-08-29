@@ -157,7 +157,7 @@ The following piece has a \emph{flat mark} (looks like a b) on the \emph{b line}
 
 \subsection{Come Thou Fount}
 
-The first thing you'll notice is that this song has sharps instead of flats. Songs either have sharps or flats in the key signature but not both.
+The first thing you'll notice is that this song has sharps (look like \#) instead of flats. Songs either have sharps or flats in the key signature but not both.
 
 \begin{lilypond}
     \relative c' {
@@ -207,6 +207,7 @@ Next you'll notice that there is a little \emph{3/4} right after the sharps and 
 \end{lilypond}
 
 \section{Playing Chords}
+\subsection{The B-I-B-L-E}
 So far you have been playing notes, and they're fun, but you can play more than one note at a time. Multiple notes being played at the same time is called a chord. The most basic chord is a major triad.
 
 \begin{lilypond}
@@ -243,15 +244,71 @@ The left of the fretboard diagram is the \emph{g} string, and the far right is t
 	<<
 	\chords{
 		\set chordChanges = ##t
-		c4~ c1~ c1 f
+		c4~ c1~ c1 f~ f g:7 g:7 g:7 c1
 	}
 	\relative c' {
-	\partial 4
-		e4 g g g e g2. g4 a a a f a2. a4 b b b a8 g b4 b b a g g a b c2. r4
+		\partial 4
+		e4 
+		^\markup{\fret-diagram #"w:4;4-o;3-o;2-o;1-3;"}
+		g g g e g2. g4 a
+		^\markup{\fret-diagram #"w:4;4-2;3-o;2-1;1-o;"}
+ 		a a f a2. a4 b
+		^\markup{\fret-diagram #"w:4;4-o;3-2;2-1;1-2;"}
+		b b a8 g b4 b b a g g a b c2.
+		^\markup{\fret-diagram #"w:4;4-o;3-o;2-o;1-3;"}
+		r4
 	}
 	\addlyrics{The B -- I -- B -- L -- E, Yes that's the book for me. I stand a -- lone on the Word of God, The B -- I -- B -- L -- E}
 	>>
 \end{lilypond}
 
+You'll see that G$^{7}$ chord; a seventh chord is a major triad with another note added, called a 7$^{th}$ note. 
+
+Lets try making a G$^7$ chord.
+
+\begin{tabular}{ lllllll }
+g & a & b & c & d & e & f \\
+1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+\end{tabular}
+
+So first we need a major G, that'd be a chord with \emph{g} first. A \emph{b} next. Then a \emph{d}.
+Notice we just skip every other note to make a major chord. And finally we add our 7$^{th}$ which is an \emph{f}. Likewise our \emph{b} is our 3$^{rd}$ and the \emph{d} our 5$^{th}$
+
+\subsection{God Is So Good}
+\begin{lilypond}
+	<<
+	\chords{
+		d1 a a:7 d d:7 g d2 a:7 d1
+	}
+	\relative c' {
+		\key d \major
+		d2^\markup{\fret-diagram #"w:4;4-2;3-2;2-2;1-o;"}
+		d4 fis4 | e1^\markup{\fret-diagram #"w:4;4-2;3-1;2-o;1-o;"} |
+		e2
+		^\markup{\fret-diagram #"w:4;4-o;3-1;2-o;1-o;"} |
+		e4 g | fis1 |
+		fis2 
+		^\markup{\fret-diagram #"w:4;4-2;3-2;2-2;1-3;"}
+		fis4 a | g2
+		^\markup{\fret-diagram #"w:4;4-o;3-2;2-3;1-2;"}
+		e4 g |
+		fis2 e2 | d1 |
+	}
+	\addlyrics{
+		God is so good, God is so good, God is so good, He's so good to me.
+	}
+	>>
+\end{lilypond}
+
+For chords like \emph{D} it may be easier to take your middle finger and cover 3 strings rather than use 3 fingers to press down each string.
+
+If you look at the key signature you'll see that \emph{f}'s and \emph{c}'s are sharped. This changes how we'll make chords. The normal key signature with no sharps and no flats is called the \emph{key of C}. However, this key is called the \emph{key of D}. Now our chord making chart looks like this:
+
+\begin{tabular}{ lllllll }
+g & a & b & c\# & d & e & f\# \\
+1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+\end{tabular}
+
+And you'll see that because a \emph{G} contains neither a \emph{c} or an \emph{f} it'll be the exact same. Note that a chord will be the same no matter what key it's played in because it's always made up of the same notes. Some chords are not ``right'' for some keys because they have notes that aren't in that key.
 
 \end{document}
